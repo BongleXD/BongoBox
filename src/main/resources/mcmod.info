@@ -1,0 +1,10 @@
+[
+{
+  "modid": "bongobox",
+  "name": "BongoBox",
+  "description": "A mod can improve your minecraft experience.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["Bongowole"]
+}
+]
