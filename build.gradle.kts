@@ -1,7 +1,4 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-import net.minecraftforge.gradle.user.IReobfuscator
-import net.minecraftforge.gradle.user.ReobfMappingType.SEARGE
-import net.minecraftforge.gradle.user.TaskSingleReobf
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.6.10"
@@ -55,4 +52,8 @@ tasks.apply {
         )
         reobfJar.get().dependsOn(this)
     }
+}
+
+tasks.withType<KotlinCompile>() {
+    kotlinOptions.jvmTarget = "1.8"
 }
